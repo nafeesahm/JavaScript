@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        //Programe to concatenate the text in between the string using function:
+        function test(name){
+            
+            t = "Hey"+ name +"How are you";
+            return t;
+        }
+        result = test(" Nafees ");
+        console.log(result);
+        
+        // Programe to make calculator using function:
         function clc(num1,num2){
             option = prompt("Enter your choice i.e.,(+,-,*,%): ");
             if (option=="+"){
@@ -24,11 +34,12 @@
         n1 = parseInt(prompt("Enter your 1st number: "));
         n2 = parseInt(prompt("Enter your 1st number: "));
         result = clc(n1,n2);
-        console.log(result);
+        console.log("Your answer is: " + result);
+
     </script>
 </head>
 <body>
-    <div class="demo">Nafees</div>
+    <div class="demo">JavaScript programme of function.</div>
 
 </body>
 </html>
