@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clc(num1,num2){
+            option = prompt("Enter your choice i.e.,(+,-,*,%): ");
+            if (option=="+"){
+                return num1+num2;
+            }
+            if (option=="-"){
+                return num1-num2;
+            }      
+            if (option=="*"){
+                return num1*num2;  
+            } 
+            if (option=="%"){
+                return num1%num2; 
+            }                                                    
+        }
+
+        n1 = parseInt(prompt("Enter your 1st number: "));
+        n2 = parseInt(prompt("Enter your 1st number: "));
+        result = clc(n1,n2);
+        console.log(result);
+    </script>
+</head>
+<body>
+    <div class="demo">Nafees</div>
+
+</body>
+</html>
