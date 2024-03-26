@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // earlier arrow function we used code for function like this: (old method)
+        let hello_old = "";
+        hello_old = function() {
+            return "Hello Nafees this is old method to use function!";
+        }
+        H = hello_old()
+        console.log(H);
+
+        //JavaScript programme using arrow function (Code With Arrow Function => ): (new method)
+        let hello = "";
+        hello = () => {return "Hello Nafees this is new method to use arrow function!"};    
+        H = hello()
+        console.log(H);
+
+        // if we have only one statement in function then we can remove return and bracket{} ByDefault value will be returned.
+        let myFunction = (a, b) => {return a * b;};
+        
+        result = myFunction(12,2);
+        console.log(result);
+
+        // if we have only one statement in function then we can remove return and bracket{} ByDefault value will be returned.
+        let myFunc = (a, b) => a * b;
+        
+        result = myFunc(12,2);
+        console.log(result);
+
+        // If you have only one parameter, you can skip the parentheses as well:
+        let oneP = name => "Hello " + name; 
+
+        result = oneP('Nafees');
+        console.log(result);
+    </script>
+</head>
+<body>
+    <div class="demo">JavaScript programme of arrow function.</div>
+
+    <script>
+
+    </script>    
+</body>
+</html>
