@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = ['nafees','ahmad','madhur']
+        console.log(a);
+
+        // ...a is spread operator/copy operator.
+        let b = [...a,'saif','ali','Haris',...a]
+        console.log(b);
+
+        var p = ''
+        for(i=0;i<b.length;i++){
+            p = p + b[i]+' ';
+            
+        }
+        console.log(p);
+    </script>
+</head>
+<body>
+    <div class="demo">Nafees</div>
+
+</body>
+</html>
