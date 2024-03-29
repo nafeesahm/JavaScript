@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Basics</title>
     <script>
-        let a = ['nafees','ahmad','madhur']    // JavaScript array
-        console.log(a);
-
-        // ...a is spread operator/copy operator.
-        let b = [...a,'saif','ali','Haris',...a]
-        console.log(b);
-
-        var p = ''
-        for(i=0;i<b.length;i++){
-            p = p + b[i]+' ';
-            
-        }
-        console.log(p);
+        // we should use var/let/const keyword to define a variable.
+        /* JavaScript is a dynamic typed programming language like python,
+        so we do not have to define data type here, 
+        atomatically based on provided value data type will assigned to the variable. */
+        var a = 10;
+        var b = 20;
+        var sum = a+b;
+        console.log(sum);
     </script>
 </head>
 <body>
-    <div class="demo">JavaScript programme of spread operator/copy operator.</div>
+    <div class="demo">JavaScript basic programme.</div>
 
 </body>
 </html>
