@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+    <script>
+        //JavaScript Object - JS Object can contain (property:value) and (function) as well
+        let obj = {Firstname: 'Nafees',
+                lastname: 'Ahmad',
+                contact: 7546039528,
+                address: 'Shaheen bagh new delhi',
+                friends: ['Nasim','Saif','Anis','Aftab'],
+
+                FullName: function(){
+                    return this.Firstname + ' ' + this.lastname;   // this keyword consisit current object
+                    }
+                }
+        console.log(obj.address);                
+        console.log(obj.friends);
+        console.log(obj.friends[2]);  
+
+        console.log(obj.FullName());             // Function calling of within JS object.
+    </script>
+</head>
+<body>
+    <div class="demo">JavaScript programme using JavaScript Object.</div>
+
+
+    <script>
+        
+    </script>
+</body>
+</html>
