@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Object</title>
     <script>
-        //JavaScript Object - JS Object can contain (property:value) and (function) as well
+        //JavaScript Object - JS Object can contain (property:value) and (Method:function)
         let obj = {Firstname: 'Nafees',
                 lastname: 'Ahmad',
                 contact: 7546039528,
@@ -16,11 +16,24 @@
                     return this.Firstname + ' ' + this.lastname;   // this keyword consisit current object
                     }
                 }
-        console.log(obj.address);                
-        console.log(obj.friends);
-        console.log(obj.friends[2]);  
+        
+        //Accessing Object Properties  
+        // We can access object properties in two ways:     
+        //objectName.propertyName           
+        //objectName["propertyName"] 
+        console.log(obj.address);              
+        console.log(obj.friends);              
+        console.log(obj["friends"]);
 
+        console.log(obj.friends[2]); 
+        console.log(obj['friends'][3]);  
+        
+        //You access an object method with the following syntax:
+        //objectName.methodName()
         console.log(obj.FullName());             // Function calling of within JS object.
+
+        //If you access a method without the () parentheses, it will return the function definition:
+        //console.log(obj.FullName);
     </script>
 </head>
 <body>
