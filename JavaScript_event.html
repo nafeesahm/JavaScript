@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Events Bulb-On/Off</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            .a_box{
+                width: 400px;
+                height: 400px;
+                margin: auto;
+                text-align: center;
+            }
+            .a_box > button{
+                width: 80px;
+                height:40px;
+                font-size: large;
+                font-weight: bold;
+                background-color: pink;
+                margin-top: 180px;
+            }
+        </style>
+        <script>
+            // Function definition
+            function bulb(state){
+                // alert(state)
+
+                if (state == 'on'){
+                    document.body.style.backgroundColor = 'yellow';                // object.member = color;
+                    document.getElementById('myImg').setAttribute('src','Bulb_On.png');
+                }
+
+                else{
+                    document.body.style.backgroundColor = 'black';
+                    document.getElementById('myImg').setAttribute('src','Bulb_Off.png');
+                }
+
+            }
+        </script>            
+    
+    </head>
+    <body>
+        <div class="a_box">
+            <img id="myImg" width="200px" src="Bulb_Off.png" width="200px">
+
+            <br/>
+
+            <button onclick="bulb('on')">On</button>
+            <button onclick="bulb('off')">Off</button>
+
+        </div>
+
+        
+    </body>
+</html>
