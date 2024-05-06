@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript event_fan on/off event</title>
+        <style>
+            .fanBox{
+                height: 300px;
+                width: 300px;
+                background-image: url("img/fan-blades.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 100px auto;
+                animation-name: fan;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-play-state: paused;
+                
+            }
+            @keyframes fan {
+                0%{
+                    transform: rotateZ(0deg)
+                }
+                100%{
+                    transform: rotateZ(359deg);
+                }
+            }
+            .btn > button{
+                font-size: x-large;
+                font-weight: bold;
+                background-color: pink;
+            }
+        </style>
+        <script>
+            function startfan(speed){
+                if (speed == 0){
+                    document.querySelector('.fanBox').style.animationPlayState = 'paused';
+                }
+                else if(speed == 1){
+                        document.querySelector('.fanBox').style.animationPlayState = 'running';
+                        document.querySelector('#fnbx').style.animationDuration = '1s';
+                }
+                else if(speed == 2){
+                    document.querySelector('[data-ahm="myfnbx"]').style.animationPlayState = 'running';
+                    document.querySelector('[data-ahm="myfnbx"]').style.animationDuration = '0.5s';
+                }
+                else if(speed == 3){
+                    document.getElementById('fnbx').style.animationPlayState = 'running';
+                    document.getElementById('fnbx').style.animationDuration = '0.01s';
+                }
+                else{
+                    alert("You can start your fan using below button.")
+                }
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <div class="fanBox" id="fnbx" data-ahm="myfnbx">
+
+        </div>
+        <div style="text-align: center;" class="btn">
+            <button onclick="startfan(0)">Stop</button>
+            <button onclick="startfan(1)">1</button>
+            <button onclick="startfan(2)">2</button>
+            <button onclick="startfan(3)">3</button><br/><br/>
+            <button onclick="startfan(4)">Click here for more information.</button>
+        </div>
+
+    </body>
+</html>
