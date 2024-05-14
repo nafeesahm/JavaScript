@@ -1,0 +1,18 @@
+                    document.body.style.backgroundColor = 'yellow';                // object.member = color;
+
+
+                    document.getElementById('myImg').setAttribute('src','img/Bulb_On.png');
+
+                    <button onclick="bulb('on')">On</button>
+
+
+                    document.querySelector('.fanBox').style.animationPlayState = 'paused';
+                        document.querySelector('.fanBox').style.animationPlayState = 'running';
+
+                        document.querySelector('#fnbx').style.animationDuration = '1s';
+
+
+                              if (pNum.charAt(i) == pNum.charAt(j)){   // indexing }
+
+
+  <div class="fanBox" id="fnbx" data-ahm="myfnbx">
