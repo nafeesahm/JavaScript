@@ -16,3 +16,13 @@
 
 
   <div class="fanBox" id="fnbx" data-ahm="myfnbx">
+
+
+
+ command for git to creat file
+
+		vi Form_Element.html
+
+		 i => insert Mode         (write something if press i button and press Esc to save and quit.)
+
+		 Esc : Wq    (save / quit)
