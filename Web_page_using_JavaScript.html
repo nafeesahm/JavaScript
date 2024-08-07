@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pure Javascript code to create web page using header/aside/footer element</title>
+    </head>
+
+    <body id="n_body">
+        <script>
+            // Create header element/tag using JS
+            var h = document.createElement('header');
+            
+            h.innerHTML = 'header';
+            //console.log(h);
+
+            //Now Tell the JS to place this header element inside body tag.
+            document.getElementById('n_body').appendChild(h);
+
+            document.querySelector('header').setAttribute('class', 'n_header');
+
+            //Object.member
+            document.body.style.margin = "0px";
+
+            var x = document.getElementsByClassName("n_header");
+            //..console.log(x[0]);
+
+            x[0].style.width = '100%';
+            x[0].style.height = '150px';
+            x[0].style.border = '2px solid #ddd';
+            
+            var x = document.getElementsByTagName('header');
+            //..console.log(x[0]);
+            x[0].style.color = 'green';
+            x[0].style.fontSize = '50px';
+            x[0].style.textAlign = 'center';
+            x[0].style.lineHeight = '150px';
+            x[0].style.border = '5px solid green';
+            
+
+            //Now we are creating asside/section element 
+            var aside1 = document.createElement('aside');
+            aside1.innerHTML = 'Aside 1';
+
+            var section = document.createElement('section');
+            section.innerHTML = 'Section';
+
+            var aside2 = document.createElement('aside');
+            aside2.innerHTML = 'Aside 2';
+            
+            // console.log(aside1);
+            // console.log(section);
+            // console.log(aside2);
+
+            document.body.appendChild(aside1);
+            document.body.appendChild(section);
+            document.body.appendChild(aside2);
+
+            // document.querySelector('aside').style.display = 'inline-block';
+            var arr = document.querySelectorAll('aside');
+            console.log(arr);
+
+            arr.forEach(function(currentValue,index,arr){
+                arr[index].style.display = 'inline-block';
+                arr[index].style.border = '5px solid green';
+                arr[index].style.height = '250px';
+                arr[index].style.width = '20%';
+                arr[index].style.textAlign = 'center';
+                arr[index].style.lineHeight = '250px';
+                arr[index].style.fontSize = '50px';
+            });
+
+            document.querySelector('section').style.display = 'inline-block';
+            document.querySelector('section').style.height = '250px';
+            document.querySelector('section').style.width = '57%';
+            document.querySelector('section').style.border = '5px solid green';
+            document.querySelector('section').style.textAlign = 'center';
+            document.querySelector('section').style.lineHeight = '250px';
+            document.querySelector('section').style.fontSize = '50px';
+            
+
+            //Now we are creating asside/section element 
+            var f = document.createElement('footer');
+            f.innerHTML = 'Footer';
+
+            // console.log(f);
+            document.body.appendChild(f);
+
+            var x = document.querySelectorAll("footer");
+            x[0].setAttribute('data-foot','foot1');
+            // console.log(x[0]);
+
+            document.querySelector('footer[data-foot="foot1"]').style.textAlign = 'center';
+            document.querySelector('[data-foot="foot1"]').style.color = 'green';
+            document.querySelector('[data-foot]').style.lineHeight = '150px';
+
+            var ftr = document.querySelector('footer');
+            ftr.style.width = '100%';
+            ftr.style.height = '150px';
+            ftr.style.border = '5px solid green';
+            ftr.style.fontSize = '50px';
+
+        </script>
+        
+    </body>
+</html>
