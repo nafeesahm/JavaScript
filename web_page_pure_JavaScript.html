@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>JavaScript Code to create Element/ and applying event on button.</title>
     </head>
 
     <body>
@@ -48,14 +48,17 @@
             
             fe.innerHTML = 'Footer';
 
+            // Creating Element button
             var b = document.createElement('button');
             b.innerHTML = 'Submit';
 
-            fe.appendChild(b);
+            fe.appendChild(b);   //Adding element to DOM of footer
 
-            var be = document.getElementsByTagName('button');
-            console.log(be[0]);
 
+            var be = document.getElementsByTagName('button');    // It will return the tagName within array.
+            console.log(be[0]);       // button tag is present on 0 index.
+
+            // Now we are applying event to the button using below function.
             be[0].addEventListener('click', function(){
                 alert("Document submitted...");
                 h.style.color = 'blue';
