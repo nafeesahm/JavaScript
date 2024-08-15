@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            // Creating new element <header>
+            var h = document.createElement('header');
+            h.innerHTML = 'Header';   // adding content to the header element.  [Method-1]
+
+            // Now adding class selector to the header element. [Method-1]
+            h.setAttribute('class',"n_header");
+
+            // Creating new element <div>
+            var m = document.createElement('div');
+
+            // Creating new element <footer>
+            var f = document.createElement('footer');
+
+            console.log(h);
+            console.log(m);
+            console.log(f);
+
+            // Adding element on DOM (Document Object Model).
+            document.body.appendChild(h);
+
+            document.body.appendChild(m);
+            // adding content to the div element. [Method-2]
+            document.querySelector('div').innerHTML = 'Main Area';
+
+            // Now adding class attribute to the div element.
+            document.querySelector('header.n_header ~ div').setAttribute('class','n_main');
+
+            var xDiv = document.getElementsByClassName('n_main');
+            // console.log(xDiv[0]);
+
+            xDiv[0].style.color = 'red';
+
+            // Adding element on DOM (Document Object Model).
+            document.body.appendChild(f);
+
+            // adding content to the footer element. [Method-3]
+            var fe = document.querySelector('div ~ footer');  //footer is Sibling of div 
+            
+            fe.innerHTML = 'Footer';
+
+            var b = document.createElement('button');
+            b.innerHTML = 'Submit';
+
+            fe.appendChild(b);
+
+            var be = document.getElementsByTagName('button');
+            console.log(be[0]);
+
+            be[0].addEventListener('click', function(){
+                alert("Document submitted...");
+                h.style.color = 'blue';
+            })
+
+
+
+
+            
+
+
+            
+
+
+
+
+            
+
+
+            
+
+        </script>
+
+    </body>
+</html>
